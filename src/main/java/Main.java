@@ -3,9 +3,7 @@ import org.apache.log4j.Logger;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by dvalo on 05.12.2016.
- */
+
 public class Main {
 
     static Logger log = Logger.getLogger(Main.class.getName());
