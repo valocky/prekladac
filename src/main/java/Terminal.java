@@ -1,9 +1,6 @@
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
-/**
- * Created by dvalo on 05.12.2016.
- */
 public class Terminal extends GrammarElement {
 
     static Logger log = Logger.getLogger(Terminal.class.getName());
@@ -159,32 +156,12 @@ public class Terminal extends GrammarElement {
             case 'u':
                 textualRepresentation = "number_value";
                 break;
-
+            case 'x':
+                textualRepresentation = "error_revocery_terminal";
+                break;
 
         }
 
     }
 
-    public boolean isSimilar(String text){
-
-        boolean isSimilar = false;
-        int score = StringUtils.getLevenshteinDistance(textualRepresentation,text);
-
-       /* if(score <= (textualRepresentation.length()/2)){
-
-            isSimilar = true;
-        }*/
-
-        log.info("score: "+score+" isSimilar: "+isSimilar);
-        return isSimilar;
-    }
-
-    public boolean isSame(String text){
-
-        boolean isSame = false;
-        if(text.equals(textualRepresentation)){
-            isSame =true;
-        }
-        return isSame;
-    }
 }

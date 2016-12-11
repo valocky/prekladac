@@ -2,16 +2,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by dvalo on 05.12.2016.
- */
 public abstract class Pravidla {
 
     public static LinkedList<GrammarElement> applyRuleS(Terminal term){
 
         LinkedList<GrammarElement> result = new LinkedList<>();
 
-        if(term.getSymbol().equals("a")){
+        if(term.getSymbol().equals("a") || term.getSymbol().equals("x")){
 
             result.addFirst(new Terminal('b'));
             result.addFirst(new Neterminal("B"));
@@ -26,7 +23,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("e") || term.equals("h") || term.equals("i") || term.equals("z")){
+        if(term.equals("e") || term.equals("h") || term.equals("i") || term.equals("z") || term.equals("x")){
 
             result.addFirst(new Neterminal("X"));
             result.addFirst(new Neterminal("C"));
@@ -44,7 +41,7 @@ public abstract class Pravidla {
 
             result.addFirst(new Neterminal("X"));
             result.addFirst(new Neterminal("C"));
-        }else if(term.equals("b")){
+        }else if(term.equals("b") || term.equals("x")){
             return result;
         }else{
             return null;
@@ -56,6 +53,12 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
+
+        if(term.equals("x")){
+
+            return result;
+        }
+
         if(term.equals("z")){
 
             result.addFirst(new Terminal('d'));
@@ -87,6 +90,8 @@ public abstract class Pravidla {
             result.addFirst(new Terminal('j'));
             result.addFirst(new Neterminal("H"));
             result.addFirst(new Terminal('i'));
+        }else {
+            return null;
         }
 
         return result;
@@ -100,7 +105,7 @@ public abstract class Pravidla {
 
             result.addFirst(new Neterminal("C"));
             result.addFirst(new Terminal('k'));
-        }else if(term.equals("d")){
+        }else if(term.equals("d") || term.equals("x")){
             return result;
         }else{
             return null;
@@ -112,7 +117,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("z")){
+        if(term.equals("z") || term.equals("x")){
 
             result.addFirst(new Neterminal("Z"));
             result.addFirst(new Neterminal("D"));
@@ -131,7 +136,7 @@ public abstract class Pravidla {
             result.addFirst(new Neterminal("Z"));
             result.addFirst(new Neterminal("D"));
             result.addFirst(new Terminal('l'));
-        }else if(term.equals("g")){
+        }else if(term.equals("g") || term.equals("x")){
             return result;
         }else{
             return null;
@@ -143,7 +148,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("f") || term.equals("z") || term.equals("m") || term.equals("o") || term.equals("u")){
+        if(term.equals("f") || term.equals("z") || term.equals("m") || term.equals("o") || term.equals("u") || term.equals("x")){
 
             result.addFirst(new Neterminal("W"));
             result.addFirst(new Neterminal("E"));
@@ -163,7 +168,7 @@ public abstract class Pravidla {
             result.addFirst(new Neterminal("W"));
             result.addFirst(new Neterminal("E"));
             result.addFirst(new Terminal('l'));
-        }else if(term.equals("g")){
+        }else if(term.equals("g") || term.equals("x")){
             return result;
         }else{
             return null;
@@ -175,7 +180,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("f") || term.equals("z") || term.equals("m") || term.equals("o") || term.equals("u")){
+        if(term.equals("f") || term.equals("z") || term.equals("m") || term.equals("o") || term.equals("u") || term.equals("x")){
 
             result.addFirst(new Neterminal("E''"));
             result.addFirst(new Neterminal("K"));
@@ -189,7 +194,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("m") || term.equals("o")){
+        if(term.equals("m") || term.equals("o") || term.equals("x")){
 
             result.addFirst(new Neterminal("E''"));
             result.addFirst(new Neterminal("K"));
@@ -207,7 +212,7 @@ public abstract class Pravidla {
         if(term.equals("m") || term.equals("o")){
 
             result.addFirst(new Neterminal("E'"));
-        }else if(term.equals("d") || term.equals("g") || term.equals("l")){
+        }else if(term.equals("d") || term.equals("g") || term.equals("l") || term.equals("x")){
             return result;
         }else{
             return null;
@@ -219,6 +224,11 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
+
+        if(term.equals("x")){
+            return result;
+        }
+
         if(term.equals("f")){
             result.addFirst(new Terminal('g'));
             result.addFirst(new Neterminal("E"));
@@ -239,6 +249,11 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
+
+        if(term.equals("x")){
+            return result;
+        }
+
         if(term.equals("m")){
 
             result.addFirst(new Terminal('m'));
@@ -255,7 +270,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("r") || term.equals("f") || term.equals("s") || term.equals("t") ){
+        if(term.equals("r") || term.equals("f") || term.equals("s") || term.equals("t") || term.equals("x")){
 
             result.addFirst(new Neterminal("H''"));
             result.addFirst(new Neterminal("M"));
@@ -269,7 +284,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("p") ){
+        if(term.equals("p") || term.equals("x")){
 
             result.addFirst(new Neterminal("H''"));
             result.addFirst(new Neterminal("M"));
@@ -287,7 +302,7 @@ public abstract class Pravidla {
         if(term.equals("p")){
 
             result.addFirst(new Neterminal("H'"));
-        }else if(term.equals("j") || term.equals("g")){
+        }else if(term.equals("j") || term.equals("g") || term.equals("x")){
 
             return result;
         }else{
@@ -300,7 +315,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("r") || term.equals("f") || term.equals("s") || term.equals("t") ){
+        if(term.equals("r") || term.equals("f") || term.equals("s") || term.equals("t") || term.equals("x")){
 
             result.addFirst(new Neterminal("M''"));
             result.addFirst(new Neterminal("N"));
@@ -314,7 +329,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("q")){
+        if(term.equals("q") || term.equals("x")){
 
             result.addFirst(new Neterminal("M''"));
             result.addFirst(new Neterminal("N"));
@@ -332,7 +347,7 @@ public abstract class Pravidla {
         if(term.equals("q")){
 
             result.addFirst(new Neterminal("M'"));
-        }else if(term.equals("p") || term.equals("j") || term.equals("g")){
+        }else if(term.equals("p") || term.equals("j") || term.equals("g") || term.equals("x")){
 
             return result;
         }else{
@@ -345,6 +360,11 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
+
+        if(term.equals("x")){
+            return result;
+        }
+
         if(term.equals("r")){
 
             result.addFirst(new Neterminal("N"));
@@ -370,7 +390,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("z")){
+        if(term.equals("z") || term.equals("x")){
 
             result.addFirst(new Terminal('z'));
         }else{
@@ -383,7 +403,7 @@ public abstract class Pravidla {
 
         LinkedList<GrammarElement> result = new LinkedList<>();
         String term = terminal.getSymbol();
-        if(term.equals("m") || term.equals("o") || term.equals("u") ){
+        if(term.equals("m") || term.equals("o") || term.equals("u") || term.equals("x")){
 
             result.addFirst(new Terminal('u'));
             result.addFirst(new Neterminal("B'"));
@@ -403,7 +423,7 @@ public abstract class Pravidla {
         }else if(term.equals("o")){
 
             result.addFirst(new Terminal('o'));
-        }else if(term.equals("u")){
+        }else if(term.equals("u") || term.equals("x")){
 
             return result;
         }else{

@@ -2,9 +2,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by dvalo on 05.12.2016.
- */
+
 public class Neterminal extends GrammarElement {
 
     private List<Terminal> expected = new ArrayList<Terminal>();

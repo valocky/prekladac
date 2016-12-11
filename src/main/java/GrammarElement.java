@@ -1,6 +1,4 @@
-/**
- * Created by dvalo on 05.12.2016.
- */
+
 public abstract class GrammarElement {
 
     protected String symbol = "";
