@@ -47,7 +47,6 @@ public class Main {
 
                 if (stackValue == null) {
 
-                    log.info("Dokoncene s poctom chyb: " + errors + ". Zasobnik je prazdny, zatial co vstup obsahuje: " + input.output());
                     break;
                 }
                 if (stackValue instanceof Terminal) {
@@ -127,7 +126,7 @@ public class Main {
             if (errors == 0 && stack.isEmpty() && input.isEmpty()) {
                 log.info("Kontrola dokoncena uspesne!");
             } else {
-                log.info("Kontrola dokoncena s poctom chyb: " + errors + ".");
+                log.info("Kontrola dokoncena s poctom pokusov o zotavenie z chyb: " + errors + ".");
                 log.info("Obsah zasobniku: " + stack.output());
                 log.info("Obsah vstupu: " + input.output());
             }
