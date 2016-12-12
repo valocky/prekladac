@@ -1,0 +1,33 @@
+BEGIN READ ( var11 , var158 ) ; var95 := ( - 2131 ) ; IF TRUE OR TRUE AND NOT NOT NOT NOT FALSE THEN WRITE ( ( + 2011 ) ) ; ; var143 := 2756 ; IF FALSE OR NOT FALSE THEN var64 := 2943 ; ELSE var229 := + 2800 ; ; WRITE ( + 3383 ) ; END
+
+BEGIN var438 := + 1814 ; END
+
+BEGIN IF FALSE THEN WRITE ( ( ( - 3725 ) ) - var114 ) ; ELSE IF ( NOT ( ( ( NOT TRUE ) ) OR ( TRUE ) ) ) AND TRUE AND NOT FALSE OR NOT TRUE THEN IF ( FALSE AND NOT FALSE OR NOT FALSE ) THEN READ ( var150 , var298 , var281 ) ; ; ; ; var473 := 1387 + 4886 + var349 - 4308 ; IF NOT NOT FALSE AND NOT ( ( FALSE ) AND ( FALSE AND NOT TRUE ) ) THEN READ ( var327 ) ; ELSE READ ( var84 ) ; ; END
+
+BEGIN IF FALSE THEN var495 := ( var94 ) + ( - 4414 - + 2785 ) + 362 ; ELSE READ ( var171 , var313 ) ; ; WRITE ( - 2023 ) ; END
+
+BEGIN IF TRUE THEN var486 := + 4371 - - 762 ; ELSE WRITE ( + 2091 , - 465 , + 2766 , 209 , + 2725 + var317 - + 880 ) ; ; END
+
+BEGIN IF ( TRUE AND FALSE AND FALSE OR TRUE ) AND NOT FALSE THEN IF FALSE OR NOT TRUE OR FALSE OR NOT FALSE THEN WRITE ( + 1586 , - 3069 , - 606 , var440 , ( - 2151 - + 2533 - + 2677 ) , + 4611 - + 4308 ) ; ; ; IF TRUE AND FALSE AND FALSE OR FALSE THEN READ ( var479 , var192 ) ; ELSE IF FALSE THEN READ ( var339 , var113 ) ; ; ; WRITE ( 3408 ) ; READ ( var284 ) ; READ ( var124 , var324 , var104 , var315 ) ; IF NOT ( FALSE ) THEN var259 := - 1440 ; ELSE READ ( var211 , var447 ) ; ; READ ( var97 ) ; READ ( var295 ) ; var195 := ( + 3597 - ( var348 ) + + 2298 - - 1662 + + 866 - - 3741 - - 1001 ) - ( var272 ) + - 3823 ; END
+
+BEGIN WRITE ( ( ( ( - 1823 ) - ( ( + 3451 ) ) ) ) ) ; var380 := var463 ; END
+
+BEGIN IF TRUE THEN IF TRUE THEN READ ( var405 ) ; ELSE READ ( var468 , var72 , var96 ) ; ; ELSE READ ( var173 , var133 ) ; ; READ ( var76 ) ; END
+
+BEGIN WRITE ( + 2598 , var368 , - 4826 - 3576 ) ; READ ( var394 ) ; END
+
+BEGIN var411 := + 4267 ; IF NOT FALSE AND TRUE THEN READ ( var349 ) ; ELSE WRITE ( var301 ) ; ; END
+
+BEGIN var := ( 15 ) ; END
+
+BEGIN IF NOT TRUE THEN WRITE ( 3 - 2 ) ; ELSE WRITE ( 3 + 2 ) ; ; END
+
+BEGIN READ ( file , file2 ) ; WRITE ( 1 ) ; IF TRUE THEN WRITE ( file ) ; ELSE WRITE ( file2 ) ; ; file := - 1 ; file2 := file ; END
+
+BEGIN var := false ; IF FALSE OR TRUE AND ( FALSE OR TRUE ) THEN var := true ; ; WRITE ( value , after , if , is , var ) ; END
+
+BEGIN var2 := var5 + ( 9685 - 789 ) ; IF NOT TRUE THEN WRITE ( num1 + num2 ) ; ELSE IF FALSE THEN var3 := ahoj ; ELSE var3 := ahoj2 ; ; ; END
+
+BEGIN WRITE ( num8 - 5 ) ; END
+
+BEGIN var2 := var7 ; IF FALSE THEN var9 := va6 ; ELSE IF NOT FALSE THEN var4 := var5 + ( 9685 - 789 ) ; ; ; IF NOT TRUE THEN WRITE ( num1 + num2 ) ; ELSE IF FALSE THEN var3 := ahoj ; ELSE var3 := ahoj2 ; ; ; var10 := var8 + ( var6 - 789 ) ; END

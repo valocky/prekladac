@@ -69,7 +69,7 @@ public class Terminal extends GrammarElement {
             default:
 
                 boolean isDigit = textualRepresentation.matches("[0-9]+");
-                boolean isLetter = textualRepresentation.matches("[a-z][a-z,0-9]*");
+                boolean isLetter = textualRepresentation.matches("[a-z,A-Z][a-z,A-Z,0-9]*");
 
                 if(isDigit){
 
@@ -81,6 +81,8 @@ public class Terminal extends GrammarElement {
 
                 } else if(isLetter){
                     symbol = "z";
+                } else {
+                    symbol = "UNKNOWN";
                 }
 
                 break;
@@ -151,10 +153,10 @@ public class Terminal extends GrammarElement {
                 textualRepresentation = "AND";
                 break;
             case 'z':
-                textualRepresentation = "variable_name";
+                textualRepresentation = "variableName";
                 break;
             case 'u':
-                textualRepresentation = "number_value";
+                textualRepresentation = "numberValue";
                 break;
             case 'x':
                 textualRepresentation = "error_revocery_terminal";
